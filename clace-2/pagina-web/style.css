@@ -51,19 +51,38 @@
   /* Footer */
   
   footer {
-    padding: 10px;
-    background-color: black;
+    padding: 20px;
+    background-color: #333; /* Un gris oscuro más suave */
     color: white;
     text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #f1f1f1; /* Una línea sutil encima del footer */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); /* Sombras suaves para dar profundidad */
+    transition: background-color 0.3s ease; /* Transición para un cambio suave de color */
   }
   
-  /* Characters */
+  footer:hover {
+    background-color: #444; /* Un tono más claro al pasar el mouse */
+  }
   
-  #characters {
+  footer a {
+    color: #ff8c00; /* Color llamativo para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el mouse */
+  }
+  
+ 
+/* Characters */
+#characters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; /* Margen uniforme entre las cajas */
     padding: 20px;
   }
   
@@ -72,12 +91,32 @@
     padding: 20px;
     text-align: center;
     border-radius: 20px;
+    width: 250px; /* Tamaño fijo para cada caja */
+    height: 300px; /* Tamaño fijo para cada caja */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño total */
+    transition: transform 0.3s ease-in-out; /* Transición para el movimiento */
+  }
+  
+  .character:hover {
+    transform: translateY(-10px); /* Movimiento al pasar el mouse */
   }
   
   .character img {
-    width: 250px;
+    width: 150px; /* Tamaño fijo para la imagen */
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
   }
+  
+  .character .name,
+  .character .species {
+    margin: 5px 0; /* Espacio entre el nombre y la especie */
+  }
+  
   
   /* Main home */
   

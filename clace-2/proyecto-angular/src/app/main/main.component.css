@@ -1,0 +1,13 @@
+.main-home {
+    min-height: 100vh;
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-home p {
+    width: 50%;
+    text-align: center;
+  }

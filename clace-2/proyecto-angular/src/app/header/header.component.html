@@ -1,0 +1,16 @@
+<header>
+    <img src="logo2.png" alt="imagen del logo">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <template [ngIf]="isLoggin">
+                <li><a href="./characters.html">Characters</a></li>
+                <li>Hola {{name}}</li>
+                <li><button (click)="isLoggin = false">Cerrar sesión</button></li>
+            </template>
+            <template [ngIf]="!isLoggin">
+                <li><button (click)="isLoggin = true">Iniciar sesión</button></li>
+            </template>
+        </ul>
+    </nav>
+  </header>

@@ -1,0 +1,26 @@
+footer {
+    padding: 20px;
+    background-color: #333; /* Un gris oscuro más suave */
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #f1f1f1; /* Una línea sutil encima del footer */
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1); /* Sombras suaves para dar profundidad */
+    transition: background-color 0.3s ease; /* Transición para un cambio suave de color */
+  }
+  
+  footer:hover {
+    background-color: #444; /* Un tono más claro al pasar el mouse */
+  }
+  
+  footer a {
+    color: #ff8c00; /* Color llamativo para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Subraya el enlace cuando se pasa el mouse */
+  }
+  
