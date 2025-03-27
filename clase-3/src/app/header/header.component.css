@@ -1,0 +1,47 @@
+header {
+    background-color: yellowgreen;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  .title-name {
+    font-size: 18px;
+  }
+  
+  header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  header ul a {
+    color: black;
+  }
+  
+  header ul * {
+    transition: scale 0.3s;
+  }
+  
+  header ul *:hover {
+    scale: 1.05;
+  }
+  
+  header button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: violet;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  header img {
+    border-radius: 50%;
+  }

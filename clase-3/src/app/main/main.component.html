@@ -1,0 +1,7 @@
+<main>
+    <section id="characters">
+      @for(character of characters; track character.id) {
+      <app-character [character]="character"></app-character>
+      }
+    </section>
+  </main>
